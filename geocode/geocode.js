@@ -5,7 +5,6 @@ var geocodeAddress = (rawAddress, callback) => {
   var encodedAddress = encodeURIComponent(rawAddress);
   var geocodeURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodedAddress;
 
-  console.log(encodedAddress);
   request(
     {
     url: geocodeURL,
